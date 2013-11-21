@@ -7,6 +7,7 @@ gem 'devise', '3.2.1'
 gem 'annotate', ">=2.5.0"
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
