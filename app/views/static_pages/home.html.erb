@@ -1,6 +1,7 @@
 <% if user_signed_in? %>
 	<div class="jumbotron center">
-		<h1>Welcome <%= current_user.email %></h1>
+		<h1>Welcome <%= current_user.name %></h1>
+		<h3>Your email is <%= current_user.email %></h3>
 	</div>
 <% else %>
 	<div class="jumbotron center">
