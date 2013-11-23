@@ -8,6 +8,7 @@ gem 'annotate', ">=2.5.0"
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
