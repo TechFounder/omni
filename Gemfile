@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 gem 'devise', '3.2.1'
 #gem 'simple_form', '~> 2.1.0'
 gem 'annotate', ">=2.5.0"
+gem 'activeadmin', github: 'gregbell/active_admin'
+# Omniauth gems
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
