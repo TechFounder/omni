@@ -20,7 +20,13 @@
 <% end -%>
 
 <%- if devise_mapping.omniauthable? %>
-  <%- resource_class.omniauth_providers.each do |provider| %>
-    <p><%= link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider), class: "btn btn-primary btn-xs" %></p>
-  <% end -%>
+		<%= link_to user_omniauth_authorize_path(:twitter) do %>
+			<button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Connect with Twitter</button>
+		<% end %>
+		<%= link_to user_omniauth_authorize_path(:facebook) do %>
+			<button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
+		<% end %>
+		<%= link_to user_omniauth_authorize_path(:google_oauth2) do %>
+			<button class="btn btn-google-plus"><i class="fa fa-google-plus"></i> | Connect with Google+</button>
+		<% end %>
 <% end -%>
