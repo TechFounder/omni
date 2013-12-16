@@ -28,5 +28,5 @@ Omnisti::Application.configure do
   config.assets.debug = true
 
   # Defined default mailer URL
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => ENV["DEV_MAILER_HOST"] }
 end

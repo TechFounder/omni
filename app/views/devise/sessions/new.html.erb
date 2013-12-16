@@ -1,6 +1,17 @@
 <h2>Sign in</h2>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+	<% if resource.errors.any? %>
+		<div class="alert alert-info">
+			<h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
+		    <ul>
+		      <% resource.errors.full_messages.each do |msg| %>
+		    		<li><%= msg %></li>
+		      <% end %>
+		    </ul>
+		</div>
+	<% end %>
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 

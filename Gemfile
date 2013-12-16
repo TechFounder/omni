@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.2'
 gem 'devise', '3.2.1'
 #gem 'simple_form', '~> 2.1.0'
 gem 'annotate', ">=2.5.0"
 gem 'activeadmin', github: 'gregbell/active_admin'
+
 # Omniauth gems
 gem 'omniauth'
 gem 'omniauth-twitter'
